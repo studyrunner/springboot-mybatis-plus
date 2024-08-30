@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://locahost:3306/testdb?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+
+
+server:
+  tomcat:
+    max-connections: 10
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
